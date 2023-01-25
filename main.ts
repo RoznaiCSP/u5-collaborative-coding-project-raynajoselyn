@@ -1,4 +1,5 @@
 // Don't forget to comment your code as you work!
+let Asteroid: Sprite = null
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -121,3 +122,31 @@ scene.setBackgroundImage(img`
     3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
     3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
     `)
+pause(5000)
+let isBored = game.ask("Are you bored?")
+if (isBored) {
+    game.splash(game.ask("What distraction?", "A=Random B=Asteroid"))
+    if (controller.A.isPressed()) {
+        music.baDing.play()
+    } else {
+        Asteroid = sprites.create(img`
+            . . . . . . . . c c c c . . . . 
+            . . . . c c c c c c c c c . . . 
+            . . . c f c c a a a a c a c . . 
+            . . c c f f f f a a a c a a c . 
+            . . c c a f f c a a f f f a a c 
+            . . c c a a a a b c f f f a a c 
+            . c c c c a c c b a f c a a c c 
+            c a f f c c c a b b 6 b b b c c 
+            c a f f f f c c c 6 b b b a a c 
+            c a a c f f c a 6 6 b b b a a c 
+            c c b a a a a b 6 b b a b b a . 
+            . c c b b b b b b b a c c b a . 
+            . . c c c b c c c b a a b c . . 
+            . . . . c b a c c b b b c . . . 
+            . . . . c b b a a 6 b c . . . . 
+            . . . . . . b 6 6 c c . . . . . 
+            `, SpriteKind.Projectile)
+        Asteroid.setVelocity(40, 50)
+    }
+}
