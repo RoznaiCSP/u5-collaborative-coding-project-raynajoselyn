@@ -128,7 +128,8 @@ if (isBored) {
     game.splash(game.ask("What distraction?", "A=Random B=Asteroid"))
     if (controller.A.isPressed()) {
         music.baDing.play()
-    } else {
+    }
+    while (isBored) {
         Asteroid = sprites.create(img`
             . . . . . . . . c c c c . . . . 
             . . . . c c c c c c c c c . . . 
@@ -147,6 +148,8 @@ if (isBored) {
             . . . . c b b a a 6 b c . . . . 
             . . . . . . b 6 6 c c . . . . . 
             `, SpriteKind.Projectile)
-        Asteroid.setVelocity(40, 50)
+        Asteroid.setPosition(120, 10)
+        Asteroid.setVelocity(-40, 50)
+        break;
     }
 }
