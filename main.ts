@@ -578,6 +578,10 @@ pause(100)
 let isBored = game.ask("Are you bored?")
 if (isBored) {
     game.splash(game.ask("What distraction?", "A=Sound B=Asteroid"))
-} else {
+}
+while (!(isBored)) {
     animatime1()
+    pause(100)
+    isBored = game.ask("Are you bored?")
+    pause(100)
 }
