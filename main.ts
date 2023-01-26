@@ -1,3 +1,85 @@
+function amyAnimation () {
+    amy = sprites.create(img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 2 2 f f f . . . . 
+        . . . f f f 2 2 2 2 f f f . . . 
+        . . f f f e e e e e e f f f . . 
+        . . f f e 2 2 2 2 2 2 e e f . . 
+        . . f e 2 f f f f f f 2 e f . . 
+        . . f f f f e e e e f f f f . . 
+        . f f e f b f 4 4 f b f e f f . 
+        . f e e 4 1 f d d f 1 4 e e f . 
+        . . f e e d d d d d d e e f . . 
+        . . . f e e 4 4 4 4 e e f . . . 
+        . . e 4 f 2 2 2 2 2 2 f 4 e . . 
+        . . 4 d f 2 2 2 2 2 2 f d 4 . . 
+        . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f . . f f . . . . . 
+        `, SpriteKind.Player)
+    amy.setPosition(62, 66)
+    pause(100)
+    amy = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 2 2 f f f . . . . 
+        . . . f f f 2 2 2 2 f f f . . . 
+        . . f f f e e e e e e f f f . . 
+        . . f f e 2 2 2 2 2 2 e e f . . 
+        . f f e 2 f f f f f f 2 e f f . 
+        . f f f f f e e e e f f f f f . 
+        . . f e f b f 4 4 f b f e f . . 
+        . . f e 4 1 f d d f 1 4 e f . . 
+        . . . f e 4 d d d d 4 e f e . . 
+        . . f e f 2 2 2 2 e d d 4 e . . 
+        . . e 4 f 2 2 2 2 e d d e . . . 
+        . . . . f 4 4 5 5 f e e . . . . 
+        . . . . f f f f f f f . . . . . 
+        . . . . f f f . . . . . . . . . 
+        `, SpriteKind.Player)
+    amy.setPosition(62, 66)
+    pause(100)
+    amy = sprites.create(img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 2 2 f f f . . . . 
+        . . . f f f 2 2 2 2 f f f . . . 
+        . . f f f e e e e e e f f f . . 
+        . . f f e 2 2 2 2 2 2 e e f . . 
+        . . f e 2 f f f f f f 2 e f . . 
+        . . f f f f e e e e f f f f . . 
+        . f f e f b f 4 4 f b f e f f . 
+        . f e e 4 1 f d d f 1 4 e e f . 
+        . . f e e d d d d d d e e f . . 
+        . . . f e e 4 4 4 4 e e f . . . 
+        . . e 4 f 2 2 2 2 2 2 f 4 e . . 
+        . . 4 d f 2 2 2 2 2 2 f d 4 . . 
+        . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f . . f f . . . . . 
+        `, SpriteKind.Player)
+    amy.setPosition(62, 66)
+    pause(100)
+    amy = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 2 2 f f f . . . . 
+        . . . f f f 2 2 2 2 f f f . . . 
+        . . f f f e e e e e e f f f . . 
+        . . f e e 2 2 2 2 2 2 e f f . . 
+        . f f e 2 f f f f f f 2 e f f . 
+        . f f f f f e e e e f f f f f . 
+        . . f e f b f 4 4 f b f e f . . 
+        . . f e 4 1 f d d f 1 4 e f . . 
+        . . e f e 4 d d d d 4 e f . . . 
+        . . e 4 d d e 2 2 2 2 f e f . . 
+        . . . e d d e 2 2 2 2 f 4 e . . 
+        . . . . e e f 5 5 4 4 f . . . . 
+        . . . . . f f f f f f f . . . . 
+        . . . . . . . . . f f f . . . . 
+        `, SpriteKind.Player)
+    amy.setPosition(62, 66)
+    pause(100)
+}
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     Asteroid = sprites.create(img`
         . . . . . . . . c c c c . . . . 
@@ -23,7 +105,169 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     music.baDing.play()
 })
+function billyAnimation () {
+    billy = sprites.create(img`
+        . . 4 4 4 . . . . 4 4 4 . . . . 
+        . 4 5 5 5 e . . e 5 5 5 4 . . . 
+        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 4 4 5 5 5 f . . f f 
+        . . f 4 5 5 f f 5 5 6 f . f 5 f 
+        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
+        . . . f 5 5 5 5 5 4 5 5 f f . . 
+        . . . f 5 f f f 5 f f 5 f . . . 
+        . . . f f . . f f . . f f . . . 
+        `, SpriteKind.Player)
+    billy.setPosition(122, 66)
+    pause(100)
+    billy = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . 4 4 4 . . . . 4 4 4 . . . . 
+        . 4 5 5 5 e . . e 5 5 5 4 . . . 
+        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 4 4 5 5 5 f . f f . 
+        . . . 4 5 5 f f 5 5 6 f f 5 f . 
+        . . . f 6 6 6 6 6 6 4 4 4 5 f . 
+        . . . f 5 5 5 5 5 5 5 f f f . . 
+        . . . f 5 4 5 f f f 5 f . . . . 
+        . . . f f f f f . . f f . . . . 
+        `, SpriteKind.Player)
+    billy.setPosition(122, 66)
+    pause(100)
+    billy = sprites.create(img`
+        . . . . . . . . . . . . . . . . 
+        . . 4 4 4 . . . . 4 4 4 . . . . 
+        . 4 5 5 5 e . . e 5 5 5 4 . . . 
+        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 4 4 5 5 5 f . f f . 
+        . . . 4 5 5 f f 5 5 6 f f 5 f . 
+        . . . f 6 6 6 6 6 6 4 f 5 5 f . 
+        . . . f 5 5 5 5 5 5 5 4 5 f . . 
+        . . . . f 5 4 5 f 5 f f f . . . 
+        . . . . . f f f f f f f . . . . 
+        `, SpriteKind.Player)
+    billy.setPosition(122, 66)
+    pause(100)
+    billy = sprites.create(img`
+        . . 4 4 4 . . . . 4 4 4 . . . . 
+        . 4 5 5 5 e . . e 5 5 5 4 . . . 
+        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 4 4 5 5 5 f . . f f 
+        . . f 4 5 5 f f 5 5 6 f . f 5 f 
+        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
+        . . . f 5 5 5 5 5 4 5 5 f f . . 
+        . . . f 5 f f f 5 f f 5 f . . . 
+        . . . f f . . f f . . f f . . . 
+        `, SpriteKind.Player)
+    billy.setPosition(122, 66)
+    pause(100)
+}
+function lilyAnimation () {
+    lily = sprites.create(img`
+        . . . . . f f 4 4 f f . . . . . 
+        . . . . f 5 4 5 5 4 5 f . . . . 
+        . . . f e 4 5 5 5 5 4 e f . . . 
+        . . f b 3 e 4 4 4 4 e 3 b f . . 
+        . . f 3 3 3 3 3 3 3 3 3 3 f . . 
+        . f 3 3 e b 3 e e 3 b e 3 3 f . 
+        . f 3 3 f f e e e e f f 3 3 f . 
+        . f b b f b f e e f b f b b f . 
+        . f b b e 1 f 4 4 f 1 e b b f . 
+        f f b b f 4 4 4 4 4 4 f b b f f 
+        f b b f f f e e e e f f f b b f 
+        . f e e f b d d d d b f e e f . 
+        . . e 4 c d d d d d d c 4 e . . 
+        . . e f b d b d b d b b f e . . 
+        . . . f f 1 d 1 d 1 d f f . . . 
+        . . . . . f f b b f f . . . . . 
+        `, SpriteKind.Player)
+    lily.setPosition(29, 60)
+    pause(100)
+    lily = sprites.create(img`
+        . . . . . . . f f . . . . . . . 
+        . . . . . f f 4 4 f f . . . . . 
+        . . . . f 5 4 5 5 4 5 f . . . . 
+        . . . f e 4 5 5 5 5 4 e f . . . 
+        . . f b 3 e 4 4 4 4 e 3 b f . . 
+        . f e 3 3 3 3 3 3 3 3 3 3 e f . 
+        . f 3 3 e b 3 e e 3 b e 3 3 f . 
+        . f b 3 f f e e e e f f 3 b f . 
+        f f b b f b f e e f b f b b f f 
+        f b b b e 1 f 4 4 f 1 e b b b f 
+        . f b b e e 4 4 4 4 4 f b b f . 
+        . . f 4 4 4 e d d d b f e f . . 
+        . . f e 4 4 e d d d d c 4 e . . 
+        . . . f e e d d b d b b f e . . 
+        . . . f f 1 d 1 d 1 1 f f . . . 
+        . . . . . f f f b b f . . . . . 
+        `, SpriteKind.Player)
+    lily.setPosition(29, 60)
+    pause(100)
+    lily = sprites.create(img`
+        . . . . . f f 4 4 f f . . . . . 
+        . . . . f 5 4 5 5 4 5 f . . . . 
+        . . . f e 4 5 5 5 5 4 e f . . . 
+        . . f b 3 e 4 4 4 4 e 3 b f . . 
+        . . f 3 3 3 3 3 3 3 3 3 3 f . . 
+        . f 3 3 e b 3 e e 3 b e 3 3 f . 
+        . f 3 3 f f e e e e f f 3 3 f . 
+        . f b b f b f e e f b f b b f . 
+        . f b b e 1 f 4 4 f 1 e b b f . 
+        f f b b f 4 4 4 4 4 4 f b b f f 
+        f b b f f f e e e e f f f b b f 
+        . f e e f b d d d d b f e e f . 
+        . . e 4 c d d d d d d c 4 e . . 
+        . . e f b d b d b d b b f e . . 
+        . . . f f 1 d 1 d 1 d f f . . . 
+        . . . . . f f b b f f . . . . . 
+        `, SpriteKind.Player)
+    lily.setPosition(29, 60)
+    pause(100)
+    lily = sprites.create(img`
+        . . . . . . . f f . . . . . . . 
+        . . . . . f f 4 4 f f . . . . . 
+        . . . . f 5 4 5 5 4 5 f . . . . 
+        . . . f e 4 5 5 5 5 4 e f . . . 
+        . . f b 3 e 4 4 4 4 e 3 b f . . 
+        . f e 3 3 3 3 3 3 3 3 3 3 e f . 
+        . f 3 3 e b 3 e e 3 b e 3 3 f . 
+        . f b 3 f f e e e e f f 3 b f . 
+        f f b b f b f e e f b f b b f f 
+        f b b b e 1 f 4 4 f 1 e b b b f 
+        . f b b f 4 4 4 4 4 e e b b f . 
+        . . f e f b d d d e 4 4 4 f . . 
+        . . e 4 c d d d d e 4 4 e f . . 
+        . . e f b b d b d d e e f . . . 
+        . . . f f 1 1 d 1 d 1 f f . . . 
+        . . . . . f b b f f f . . . . . 
+        `, SpriteKind.Player)
+    lily.setPosition(29, 60)
+    pause(100)
+}
 function animatime1 () {
+    luckyAnimation()
+    amyAnimation()
+    billyAnimation()
+    lilyAnimation()
+}
+function luckyAnimation () {
     lucky = sprites.create(img`
         . . . . . . . . . . b 5 b . . . 
         . . . . . . . . . b 5 b . . . . 
@@ -124,238 +368,6 @@ function animatime1 () {
         `, SpriteKind.Player)
     lucky.setPosition(94, 79)
     pause(100)
-    amy = sprites.create(img`
-        . . . . . . f f f f . . . . . . 
-        . . . . f f f 2 2 f f f . . . . 
-        . . . f f f 2 2 2 2 f f f . . . 
-        . . f f f e e e e e e f f f . . 
-        . . f f e 2 2 2 2 2 2 e e f . . 
-        . . f e 2 f f f f f f 2 e f . . 
-        . . f f f f e e e e f f f f . . 
-        . f f e f b f 4 4 f b f e f f . 
-        . f e e 4 1 f d d f 1 4 e e f . 
-        . . f e e d d d d d d e e f . . 
-        . . . f e e 4 4 4 4 e e f . . . 
-        . . e 4 f 2 2 2 2 2 2 f 4 e . . 
-        . . 4 d f 2 2 2 2 2 2 f d 4 . . 
-        . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
-        . . . . . f f f f f f . . . . . 
-        . . . . . f f . . f f . . . . . 
-        `, SpriteKind.Player)
-    amy.setPosition(62, 66)
-    pause(100)
-    amy = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . f f f f . . . . . . 
-        . . . . f f f 2 2 f f f . . . . 
-        . . . f f f 2 2 2 2 f f f . . . 
-        . . f f f e e e e e e f f f . . 
-        . . f f e 2 2 2 2 2 2 e e f . . 
-        . f f e 2 f f f f f f 2 e f f . 
-        . f f f f f e e e e f f f f f . 
-        . . f e f b f 4 4 f b f e f . . 
-        . . f e 4 1 f d d f 1 4 e f . . 
-        . . . f e 4 d d d d 4 e f e . . 
-        . . f e f 2 2 2 2 e d d 4 e . . 
-        . . e 4 f 2 2 2 2 e d d e . . . 
-        . . . . f 4 4 5 5 f e e . . . . 
-        . . . . f f f f f f f . . . . . 
-        . . . . f f f . . . . . . . . . 
-        `, SpriteKind.Player)
-    amy.setPosition(62, 66)
-    pause(100)
-    amy = sprites.create(img`
-        . . . . . . f f f f . . . . . . 
-        . . . . f f f 2 2 f f f . . . . 
-        . . . f f f 2 2 2 2 f f f . . . 
-        . . f f f e e e e e e f f f . . 
-        . . f f e 2 2 2 2 2 2 e e f . . 
-        . . f e 2 f f f f f f 2 e f . . 
-        . . f f f f e e e e f f f f . . 
-        . f f e f b f 4 4 f b f e f f . 
-        . f e e 4 1 f d d f 1 4 e e f . 
-        . . f e e d d d d d d e e f . . 
-        . . . f e e 4 4 4 4 e e f . . . 
-        . . e 4 f 2 2 2 2 2 2 f 4 e . . 
-        . . 4 d f 2 2 2 2 2 2 f d 4 . . 
-        . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
-        . . . . . f f f f f f . . . . . 
-        . . . . . f f . . f f . . . . . 
-        `, SpriteKind.Player)
-    amy.setPosition(62, 66)
-    pause(100)
-    amy = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . f f f f . . . . . . 
-        . . . . f f f 2 2 f f f . . . . 
-        . . . f f f 2 2 2 2 f f f . . . 
-        . . f f f e e e e e e f f f . . 
-        . . f e e 2 2 2 2 2 2 e f f . . 
-        . f f e 2 f f f f f f 2 e f f . 
-        . f f f f f e e e e f f f f f . 
-        . . f e f b f 4 4 f b f e f . . 
-        . . f e 4 1 f d d f 1 4 e f . . 
-        . . e f e 4 d d d d 4 e f . . . 
-        . . e 4 d d e 2 2 2 2 f e f . . 
-        . . . e d d e 2 2 2 2 f 4 e . . 
-        . . . . e e f 5 5 4 4 f . . . . 
-        . . . . . f f f f f f f . . . . 
-        . . . . . . . . . f f f . . . . 
-        `, SpriteKind.Player)
-    amy.setPosition(62, 66)
-    pause(100)
-    billy = sprites.create(img`
-        . . 4 4 4 . . . . 4 4 4 . . . . 
-        . 4 5 5 5 e . . e 5 5 5 4 . . . 
-        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
-        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
-        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
-        . e e 5 5 5 5 5 5 5 5 e e . . . 
-        . . e 5 f 5 5 5 5 f 5 e . . . . 
-        . . f 5 5 5 4 4 5 5 5 f . . f f 
-        . . f 4 5 5 f f 5 5 6 f . f 5 f 
-        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
-        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
-        . . . f 5 5 5 5 5 4 5 5 f f . . 
-        . . . f 5 f f f 5 f f 5 f . . . 
-        . . . f f . . f f . . f f . . . 
-        `, SpriteKind.Player)
-    billy.setPosition(122, 66)
-    pause(100)
-    billy = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . 4 4 4 . . . . 4 4 4 . . . . 
-        . 4 5 5 5 e . . e 5 5 5 4 . . . 
-        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
-        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
-        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
-        . e e 5 5 5 5 5 5 5 5 e e . . . 
-        . . e 5 f 5 5 5 5 f 5 e . . . . 
-        . . f 5 5 5 4 4 5 5 5 f . f f . 
-        . . . 4 5 5 f f 5 5 6 f f 5 f . 
-        . . . f 6 6 6 6 6 6 4 4 4 5 f . 
-        . . . f 5 5 5 5 5 5 5 f f f . . 
-        . . . f 5 4 5 f f f 5 f . . . . 
-        . . . f f f f f . . f f . . . . 
-        `, SpriteKind.Player)
-    billy.setPosition(122, 66)
-    pause(100)
-    billy = sprites.create(img`
-        . . . . . . . . . . . . . . . . 
-        . . 4 4 4 . . . . 4 4 4 . . . . 
-        . 4 5 5 5 e . . e 5 5 5 4 . . . 
-        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
-        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
-        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
-        . e e 5 5 5 5 5 5 5 5 e e . . . 
-        . . e 5 f 5 5 5 5 f 5 e . . . . 
-        . . f 5 5 5 4 4 5 5 5 f . f f . 
-        . . . 4 5 5 f f 5 5 6 f f 5 f . 
-        . . . f 6 6 6 6 6 6 4 f 5 5 f . 
-        . . . f 5 5 5 5 5 5 5 4 5 f . . 
-        . . . . f 5 4 5 f 5 f f f . . . 
-        . . . . . f f f f f f f . . . . 
-        `, SpriteKind.Player)
-    billy.setPosition(122, 66)
-    pause(100)
-    billy = sprites.create(img`
-        . . 4 4 4 . . . . 4 4 4 . . . . 
-        . 4 5 5 5 e . . e 5 5 5 4 . . . 
-        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
-        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
-        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
-        . e e 5 5 5 5 5 5 5 5 e e . . . 
-        . . e 5 f 5 5 5 5 f 5 e . . . . 
-        . . f 5 5 5 4 4 5 5 5 f . . f f 
-        . . f 4 5 5 f f 5 5 6 f . f 5 f 
-        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
-        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
-        . . . f 5 5 5 5 5 4 5 5 f f . . 
-        . . . f 5 f f f 5 f f 5 f . . . 
-        . . . f f . . f f . . f f . . . 
-        `, SpriteKind.Player)
-    billy.setPosition(122, 66)
-    pause(100)
-    lily = sprites.create(img`
-        . . . . . f f 4 4 f f . . . . . 
-        . . . . f 5 4 5 5 4 5 f . . . . 
-        . . . f e 4 5 5 5 5 4 e f . . . 
-        . . f b 3 e 4 4 4 4 e 3 b f . . 
-        . . f 3 3 3 3 3 3 3 3 3 3 f . . 
-        . f 3 3 e b 3 e e 3 b e 3 3 f . 
-        . f 3 3 f f e e e e f f 3 3 f . 
-        . f b b f b f e e f b f b b f . 
-        . f b b e 1 f 4 4 f 1 e b b f . 
-        f f b b f 4 4 4 4 4 4 f b b f f 
-        f b b f f f e e e e f f f b b f 
-        . f e e f b d d d d b f e e f . 
-        . . e 4 c d d d d d d c 4 e . . 
-        . . e f b d b d b d b b f e . . 
-        . . . f f 1 d 1 d 1 d f f . . . 
-        . . . . . f f b b f f . . . . . 
-        `, SpriteKind.Player)
-    lily.setPosition(29, 60)
-    pause(100)
-    lily = sprites.create(img`
-        . . . . . . . f f . . . . . . . 
-        . . . . . f f 4 4 f f . . . . . 
-        . . . . f 5 4 5 5 4 5 f . . . . 
-        . . . f e 4 5 5 5 5 4 e f . . . 
-        . . f b 3 e 4 4 4 4 e 3 b f . . 
-        . f e 3 3 3 3 3 3 3 3 3 3 e f . 
-        . f 3 3 e b 3 e e 3 b e 3 3 f . 
-        . f b 3 f f e e e e f f 3 b f . 
-        f f b b f b f e e f b f b b f f 
-        f b b b e 1 f 4 4 f 1 e b b b f 
-        . f b b e e 4 4 4 4 4 f b b f . 
-        . . f 4 4 4 e d d d b f e f . . 
-        . . f e 4 4 e d d d d c 4 e . . 
-        . . . f e e d d b d b b f e . . 
-        . . . f f 1 d 1 d 1 1 f f . . . 
-        . . . . . f f f b b f . . . . . 
-        `, SpriteKind.Player)
-    lily.setPosition(29, 60)
-    pause(100)
-    lily = sprites.create(img`
-        . . . . . f f 4 4 f f . . . . . 
-        . . . . f 5 4 5 5 4 5 f . . . . 
-        . . . f e 4 5 5 5 5 4 e f . . . 
-        . . f b 3 e 4 4 4 4 e 3 b f . . 
-        . . f 3 3 3 3 3 3 3 3 3 3 f . . 
-        . f 3 3 e b 3 e e 3 b e 3 3 f . 
-        . f 3 3 f f e e e e f f 3 3 f . 
-        . f b b f b f e e f b f b b f . 
-        . f b b e 1 f 4 4 f 1 e b b f . 
-        f f b b f 4 4 4 4 4 4 f b b f f 
-        f b b f f f e e e e f f f b b f 
-        . f e e f b d d d d b f e e f . 
-        . . e 4 c d d d d d d c 4 e . . 
-        . . e f b d b d b d b b f e . . 
-        . . . f f 1 d 1 d 1 d f f . . . 
-        . . . . . f f b b f f . . . . . 
-        `, SpriteKind.Player)
-    lily.setPosition(29, 60)
-    pause(100)
-    lily = sprites.create(img`
-        . . . . . . . f f . . . . . . . 
-        . . . . . f f 4 4 f f . . . . . 
-        . . . . f 5 4 5 5 4 5 f . . . . 
-        . . . f e 4 5 5 5 5 4 e f . . . 
-        . . f b 3 e 4 4 4 4 e 3 b f . . 
-        . f e 3 3 3 3 3 3 3 3 3 3 e f . 
-        . f 3 3 e b 3 e e 3 b e 3 3 f . 
-        . f b 3 f f e e e e f f 3 b f . 
-        f f b b f b f e e f b f b b f f 
-        f b b b e 1 f 4 4 f 1 e b b b f 
-        . f b b f 4 4 4 4 4 e e b b f . 
-        . . f e f b d d d e 4 4 4 f . . 
-        . . e 4 c d d d d e 4 4 e f . . 
-        . . e f b b d b d d e e f . . . 
-        . . . f f 1 1 d 1 d 1 f f . . . 
-        . . . . . f b b f f f . . . . . 
-        `, SpriteKind.Player)
-    lily.setPosition(29, 60)
-    pause(100)
 }
 function sprites2 () {
     billy = sprites.create(img`
@@ -434,11 +446,11 @@ function sprites2 () {
     lucky.setPosition(94, 79)
 }
 // Don't forget to comment your code as you work!
+let lucky: Sprite = null
 let lily: Sprite = null
 let billy: Sprite = null
-let amy: Sprite = null
-let lucky: Sprite = null
 let Asteroid: Sprite = null
+let amy: Sprite = null
 sprites2()
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
