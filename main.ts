@@ -1,3 +1,4 @@
+// this function compresses the movements for amy's animation and the parameter "number of times" makes the repeat loop repeat the animation the amount of times we type into the call back block. 
 function amyAnimation (number_of_times: number) {
     for (let index = 0; index < number_of_times; index++) {
         amy = sprites.create(img`
@@ -82,6 +83,7 @@ function amyAnimation (number_of_times: number) {
         pause(100)
     }
 }
+// When you choose asteroid as the distraction option you will have to press the B button. Once it's pressed you will be able to bring down asteroids to the sprites.
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     Asteroid = sprites.create(img`
         . . . . . . . . c c c c . . . . 
@@ -107,6 +109,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     music.baDing.play()
 })
+// this function compresses the movements for billy's animation and the parameter "number of times" makes the repeat loop repeat the animation the amount of times we type into the call back block.
 function billyAnimation (number_of_times: number) {
     for (let index = 0; index < number_of_times; index++) {
         billy = sprites.create(img`
@@ -183,6 +186,7 @@ function billyAnimation (number_of_times: number) {
         pause(100)
     }
 }
+// this function compresses the movements for lily's animation
 function lilyAnimation () {
     lily = sprites.create(img`
         . . . . . f f 4 4 f f . . . . . 
@@ -265,12 +269,14 @@ function lilyAnimation () {
     lily.setPosition(29, 60)
     pause(100)
 }
+// this function has to call 4 separate functions. In these four separate functions there is an animation created for each sprite. For two out of the 4 functions we used a "number" parameter so that we can repeat that loop the amount of times that we typed into the bubble. This function makes the coding process easier.
 function animatime1 () {
     luckyAnimation()
     amyAnimation(3)
     billyAnimation(4)
     lilyAnimation()
 }
+// This function compresses all the movements to animate "lucky"
 function luckyAnimation () {
     lucky = sprites.create(img`
         . . . . . . . . . . b 5 b . . . 
@@ -373,6 +379,7 @@ function luckyAnimation () {
     lucky.setPosition(94, 79)
     pause(100)
 }
+// This function shows compresses all the sprites into one function so when you call this function all of the sprites show up on the screen at the same time.
 function sprites2 () {
     billy = sprites.create(img`
         . . 4 4 4 . . . . 4 4 4 . . . . 
