@@ -106,6 +106,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     Asteroid.setPosition(120, 10)
     Asteroid.setVelocity(-40, 50)
 })
+// what they press A after ansering yes to are you bored then it wuld make a ba ding
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     music.baDing.play()
 })
@@ -462,6 +463,7 @@ let lily: Sprite = null
 let billy: Sprite = null
 let Asteroid: Sprite = null
 let amy: Sprite = null
+// show sprites in function sprites
 sprites2()
 scene.setBackgroundImage(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -586,10 +588,13 @@ scene.setBackgroundImage(img`
     3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
     `)
 pause(100)
+// ask player are you bored?
 let isBored = game.ask("Are you bored?")
+// A sound or B asteroid
 if (isBored) {
     game.splash(game.ask("What distraction?", "A=Sound B=Asteroid"))
 }
+// when player say no to are you bored then it would play an animation and ask you the same question
 while (!(isBored)) {
     animatime1()
     pause(100)
